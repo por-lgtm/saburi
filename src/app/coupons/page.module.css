@@ -1,0 +1,78 @@
+.couponContainer {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.couponCard {
+    border: 2px dashed var(--c-red);
+    background-color: #fffaf0;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.couponCard::before,
+.couponCard::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--c-white);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.couponCard::before {
+    left: -15px;
+    border-right: 2px dashed var(--c-red);
+}
+
+.couponCard::after {
+    right: -15px;
+    border-left: 2px dashed var(--c-red);
+}
+
+.couponTitle {
+    color: var(--c-red);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: var(--font-serif);
+}
+
+.couponContent {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.couponNote {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1.5rem;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.expiration {
+    display: inline-block;
+    background-color: var(--c-red);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.inactiveMessage {
+    text-align: center;
+    padding: 4rem;
+    background-color: var(--c-gray-light);
+    border-radius: 8px;
+    color: #666;
+}

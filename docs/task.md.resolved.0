@@ -1,0 +1,35 @@
+# Saburi Restaurant Website Task List
+
+- [ ] Project Setup <!-- id: 0 -->
+    - [ ] Initialize Next.js project in `saburi-restaurant` (or new folder if needed) <!-- id: 1 -->
+    - [ ] Setup Tailwind CSS (as per modern design standards if user agrees, or Vanilla CSS if preferred - prompt implies "Modern Web Design" which often aligns well with Tailwind, but guidelines say "Avoid Tailwind unless explicitly requested". I will stick to **Vanilla CSS** or **CSS Modules** as per "Web Application Development" rules: "Use Vanilla CSS for maximum flexibility and control. Avoid using TailwindCSS unless the USER explicitly requests it".) <!-- id: 2 -->
+    - [ ] Setup folder structure (pages/components) <!-- id: 3 -->
+- [ ] Design System & Layout <!-- id: 4 -->
+    - [ ] Create `globals.css` with variables (colors: White/Off-white, Deep Red, Black) <!-- id: 5 -->
+    - [ ] Implement Header (Logo, Nav, CTA) <!-- id: 6 -->
+    - [ ] Implement Footer (NAP, Access, Map) <!-- id: 7 -->
+    - [ ] Create Layout component <!-- id: 8 -->
+- [ ] Page Implementation <!-- id: 9 -->
+    - [ ] Home Page (`/`) <!-- id: 10 -->
+        - [ ] Main Visual (Slider) <!-- id: 11 -->
+        - [ ] Catch copy <!-- id: 12 -->
+        - [ ] Recommended Menu Section <!-- id: 13 -->
+    - [ ] Menu Page (`/menu`) <!-- id: 14 -->
+        - [ ] Lunch, Dinner, Takeout sections <!-- id: 15 -->
+    - [ ] Seats/Interior Page (`/seats`) <!-- id: 16 -->
+    - [ ] Photos Page (`/photos`) <!-- id: 17 -->
+    - [ ] Coupons Page (`/coupons`) <!-- id: 18 -->
+    - [ ] Access Page (`/access`) <!-- id: 19 -->
+        - [ ] Google Map embed <!-- id: 20 -->
+        - [ ] Parking info <!-- id: 21 -->
+    - [ ] FAQ Page (`/faq`) <!-- id: 22 -->
+    - [ ] Contact Page (`/contact`) <!-- id: 23 -->
+    - [ ] News Page (`/news`) <!-- id: 24 -->
+- [ ] SEO & Optimization <!-- id: 25 -->
+    - [ ] Meta tags (Title, Description) per page <!-- id: 26 -->
+    - [ ] JSON-LD Structured Data <!-- id: 27 -->
+    - [ ] Accessibility check (Alt text, contrast) <!-- id: 28 -->
+- [ ] Verification & Polish <!-- id: 29 -->
+    - [ ] Verify Mobile Responsiveness <!-- id: 30 -->
+    - [ ] Verify Navigation <!-- id: 31 -->
+    - [ ] Final Content Check (NAP consistency) <!-- id: 32 -->
