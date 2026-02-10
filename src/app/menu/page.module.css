@@ -18,6 +18,12 @@
     text-align: center;
     margin-bottom: 0;
     position: relative;
+
+    /* Background Image Settings */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('/images/hero_bg.png');
+    /* Re-using hero bg for now as a fallback with overlay */
+    background-size: cover;
+    background-position: center;
 }
 
 .title {
@@ -25,18 +31,23 @@
     margin-bottom: 2rem;
     font-family: var(--font-serif);
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
+    /* Increased spacing */
 
     /* Vertical writing style */
     writing-mode: vertical-rl;
     text-orientation: upright;
     margin: 0 auto 2rem;
-    height: 200px;
-    /* Adjust height for vertical text */
+    height: auto;
+    /* Allow auto height */
+    min-height: 250px;
+    /* Ensure enough height */
     display: inline-block;
     border-right: 1px solid var(--c-red);
     /* Vertical accent line next to title */
     padding-right: 1.5rem;
+    line-height: 1;
+    /* Reset line height to prevent width expansion */
 }
 
 .subtitle {
