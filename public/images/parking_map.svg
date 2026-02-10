@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text { font-family: "Noto Sans JP", sans-serif; font-weight: bold; }
+      .label { font-size: 24px; fill: #333; }
+      .sublabel { font-size: 18px; fill: #555; }
+      .road-label { font-size: 28px; fill: #fff; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f4f4f4" />
+  
+  <!-- Route 162 (Diagonal) -->
+  <path d="M600 600 L800 200 L800 0 L500 600 Z" fill="#777" />
+  <path d="M580 600 L780 200" stroke="white" stroke-width="4" stroke-dasharray="20,20" />
+  
+  <!-- Road Label -->
+  <text x="650" y="450" class="text road-label" transform="rotate(-63 650,450)">国道162号線</text>
+
+  <!-- Restaurant Area (Red Theme) -->
+  <g transform="rotate(-23 300 300)">
+    <!-- Main Building -->
+    <rect x="250" y="200" width="180" height="150" fill="#ffeebb" stroke="#d64a4a" stroke-width="4" />
+    <text x="340" y="270" text-anchor="middle" class="text label" fill="#d64a4a">和風中華 佐分利</text>
+    <text x="340" y="300" text-anchor="middle" class="text sublabel">(店舗)</text>
+    
+    <!-- Entrance -->
+    <rect x="320" y="350" width="40" height="20" fill="#d64a4a" />
+    <text x="340" y="385" text-anchor="middle" class="text sublabel" font-size="14">入口</text>
+  </g>
+
+  <!-- Toilet (Green Theme) -->
+  <g transform="rotate(-23 380 180)">
+    <rect x="380" y="160" width="60" height="50" fill="#e6ffcc" stroke="#4caf50" stroke-width="3" />
+    <text x="410" y="190" text-anchor="middle" class="text sublabel" fill="#2e7d32" font-size="16">トイレ</text>
+  </g>
+
+  <!-- Parking Area (Blue Theme) -->
+  <!-- Located along the road -->
+  <g transform="rotate(-23 520 280)">
+    <rect x="480" y="200" width="100" height="220" fill="#e6f0ff" stroke="#2196f3" stroke-width="4" />
+    <!-- Parking Slots -->
+    <line x1="480" y1="255" x2="580" y2="255" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5" />
+    <line x1="480" y1="310" x2="580" y2="310" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5" />
+    <line x1="480" y1="365" x2="580" y2="365" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <text x="530" y="180" text-anchor="middle" class="text label" fill="#1565c0">駐車場</text>
+    <text x="530" y="315" text-anchor="middle" class="text sublabel" fill="#1565c0" opacity="0.5" font-size="30">P</text>
+  </g>
+  
+  <!-- Arrow indicating entrance from road -->
+  <path d="M620 400 Q 550 450 450 420" fill="none" stroke="#333" stroke-width="3" marker-end="url(#arrow)" />
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+</svg>

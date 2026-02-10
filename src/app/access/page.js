@@ -73,13 +73,13 @@ export default function AccessPage() {
                 <h3 className={styles.parkingTitle} style={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'var(--font-serif)' }}>駐車場のご案内</h3>
                 <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
                     <p style={{ marginBottom: '1rem' }}>
-                        <a href="/images/parking_map.pdf" target="_blank" className="btn btn-outline">
-                            PDFで地図を開く
-                        </a>
+                        お店の前の「青枠」部分が駐車場です（4台分）。
                     </p>
-                    <object data="/images/parking_map.pdf" type="application/pdf" width="100%" height="500px">
-                        <p>お使いのブラウザではPDFが表示されません。<a href="/images/parking_map.pdf">こちらからダウンロード</a>してください。</p>
-                    </object>
+                    <img
+                        src="/images/parking_map.svg"
+                        alt="和風中華佐分利 駐車場マップ"
+                        style={{ width: '100%', maxWidth: '600px', height: 'auto', border: '1px solid #eee' }}
+                    />
                 </div>
             </div>
         </div>
