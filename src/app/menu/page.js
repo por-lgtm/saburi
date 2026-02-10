@@ -17,9 +17,6 @@ export default function MenuPage() {
         <div className={styles.container}>
             <div className={styles.header}>
                 <h2 className={styles.title}>お品書き</h2>
-                <p className={styles.subtitle}>
-                    季節の食材を使用した、こだわりの一品をご賞味ください。
-                </p>
             </div>
 
             <CategoryNav
