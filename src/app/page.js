@@ -37,7 +37,7 @@ export default function Home() {
     <div className={styles.main}>
       {/* Hero Section */}
       {/* Hero Section */}
-      <section className={styles.hero} style={{ backgroundImage: 'url(/images/hero_bg_new.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className={styles.hero} style={{ backgroundImage: 'url(/images/interior_table.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h2 className={styles.heroTitle}>美山の四季を、<br />中華で味わう。</h2>
