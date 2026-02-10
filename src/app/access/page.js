@@ -71,8 +71,15 @@ export default function AccessPage() {
 
             <div className={styles.parkingSection} style={{ marginTop: '4rem' }}>
                 <h3 className={styles.parkingTitle} style={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'var(--font-serif)' }}>駐車場のご案内</h3>
-                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-                    <ParkingMap />
+                <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+                    <p style={{ marginBottom: '1rem' }}>
+                        <a href="/images/parking_map.pdf" target="_blank" className="btn btn-outline">
+                            PDFで地図を開く
+                        </a>
+                    </p>
+                    <object data="/images/parking_map.pdf" type="application/pdf" width="100%" height="500px">
+                        <p>お使いのブラウザではPDFが表示されません。<a href="/images/parking_map.pdf">こちらからダウンロード</a>してください。</p>
+                    </object>
                 </div>
             </div>
         </div>
