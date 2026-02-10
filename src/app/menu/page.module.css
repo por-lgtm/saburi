@@ -1,28 +1,67 @@
 .container {
     min-height: 100vh;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    /* Subtle grid pattern */
+    background-color: var(--c-white);
 }
 
 .header {
-    background-color: var(--c-black);
-    color: #fff;
-    padding: 4rem 1rem;
+    background-color: transparent;
+    /* Remove heavy black background */
+    color: var(--c-black);
+    padding: 8rem 1rem 6rem;
+    /* More top padding */
     text-align: center;
     margin-bottom: 0;
+    position: relative;
 }
 
 .title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
     font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+
+    /* Vertical writing style */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 0 auto 2rem;
+    height: 200px;
+    /* Adjust height for vertical text */
+    display: inline-block;
+    border-right: 1px solid var(--c-red);
+    /* Vertical accent line next to title */
+    padding-right: 1.5rem;
 }
 
 .subtitle {
     font-size: 1rem;
-    opacity: 0.9;
+    color: #666;
+    font-family: var(--font-serif);
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
 }
 
 .menuContent {
-    padding-top: 3rem;
+    padding-top: 4rem;
     min-height: 60vh;
+    max-width: 1000px;
+    /* Limit width for readability */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 6rem 1rem 4rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        height: 160px;
+    }
 }

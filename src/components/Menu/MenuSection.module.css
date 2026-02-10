@@ -1,71 +1,90 @@
 .section {
-    margin-bottom: 4rem;
-    scroll-margin-top: 100px;
-    /* Adjust for sticky header/nav */
+    margin-bottom: 6rem;
+    /* Increased spacing between sections */
+    scroll-margin-top: 120px;
 }
 
 .categoryTitle {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--c-gold);
+    border-bottom: 1px solid var(--c-black);
+    /* Thin, elegant line */
     display: inline-block;
     color: var(--c-black);
+    font-family: var(--font-serif);
+    letter-spacing: 0.1em;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* Mobile: 1 column */
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Spacing between items */
 }
 
-/* Tablet & Desktop */
+/* Tablet & Desktop: Switch to a 2-column list for better readability */
 @media (min-width: 768px) {
     .grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Tablet: 2 columns */
-    }
-}
-
-@media (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-        /* Desktop: 3 columns */
+        column-gap: 4rem;
+        /* Wide gap for elegance */
+        row-gap: 3rem;
     }
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid var(--c-gray-border);
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    /* Removed boxy borders and shadows */
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px dotted var(--c-gray-border);
+    /* Subtle separator */
+    padding-bottom: 1.5rem;
+    transition: none;
+}
+
+.card:last-child {
+    border-bottom: none;
 }
 
 .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: none;
+    box-shadow: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
 }
 
 .itemName {
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
     color: var(--c-black);
+    letter-spacing: 0.05em;
 }
 
 .itemDesc {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 0.95rem;
+    color: #555;
+    /* Slightly darker for readability */
     margin-bottom: 0.5rem;
-    line-height: 1.5;
+    line-height: 1.8;
+    /* More breathing room */
 }
 
 .itemPrice {
-    font-weight: bold;
-    color: var(--c-red);
+    font-family: var(--font-serif);
+    /* Price numbers in serif look elegant */
+    font-weight: normal;
+    color: var(--c-black);
     font-size: 1.1rem;
-    margin-top: auto;
-    /* Push to bottom if flex column */
+    margin-top: 0.5rem;
+    text-align: right;
+    /* Align price to right */
 }
