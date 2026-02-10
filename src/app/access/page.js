@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.css';
+import ParkingMap from '@/components/Access/ParkingMap';
 
 export const metadata = {
     title: 'アクセス | 和風中華 佐分利',
@@ -8,17 +9,9 @@ export const metadata = {
 
 export default function AccessPage() {
     const mapUrl = "https://maps.app.goo.gl/Ji47U8bjkoWaSpNc7?g_st=ic";
-    // Encode address for embed
-    const address = "和風中華 佐分利";
-    const embedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203.7!2d135.545!3d35.289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000494955555555%3A0x1234567890abcdef!2z5ZKM6aKo5Lit6I-vIOS9k-li5Yip!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp`;
-    // Note: Using a generic embed for "Saburi" might need valid CID. 
-    // Since I can't look up CID dynamically easily without API key, I'll use q=Address.
     const addressEncoded = encodeURIComponent("〒601-0721 京都府南丹市美山町上平屋盆徳5−2");
-    const embedSrc = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${addressEncoded}`;
-    // Wait, standard iframe embed doesn't need API key if using "pb" parameter from "Share -> Embed", but I don't have it.
-    // I will use the "q" parameter in the standard output format which is:
-    // https://maps.google.com/maps?q=${addressEncoded}&t=&z=15&ie=UTF8&iwloc=&output=embed
-    const simpleEmbed = `https://maps.google.com/maps?q=${addressEncoded}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+    // Standard Google Maps Embed with q parameter
+    const embedSrc = `https://maps.google.com/maps?q=${addressEncoded}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
     return (
         <div className="container section">
@@ -67,7 +60,7 @@ export default function AccessPage() {
                     <h3 style={{ marginBottom: '1rem', fontFamily: 'var(--font-serif)' }}>マップ</h3>
                     <div className={styles.mapContainer}>
                         <iframe
-                            src={simpleEmbed}
+                            src={embedSrc}
                             className={styles.mapFrame}
                             allowFullScreen
                             loading="lazy"
@@ -76,13 +69,10 @@ export default function AccessPage() {
                 </div>
             </div>
 
-            <div className={styles.parkingSection}>
-                <h3 className={styles.parkingTitle}>駐車場のご案内</h3>
-                <p>お店は見つかりますが、駐車場が分かりにくいので、下の図をご確認ください。</p>
-                <p><strong>駐車場：4台</strong></p>
-                <div className={styles.parkingMapPlaceholder}>
-                    {/* Real image should be here: access-map.png */}
-                    [駐車場・アクセス図] access-map.png
+            <div className={styles.parkingSection} style={{ marginTop: '4rem' }}>
+                <h3 className={styles.parkingTitle} style={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'var(--font-serif)' }}>駐車場のご案内</h3>
+                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                    <ParkingMap />
                 </div>
             </div>
         </div>
