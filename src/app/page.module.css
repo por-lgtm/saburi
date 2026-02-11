@@ -117,3 +117,29 @@
   font-size: 0.9rem;
   color: #666;
 }
+
+/* Action Area (Button + Message) */
+.actionArea {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.takeoutMsg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .takeoutMsg {
+    position: static;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+  }
+}

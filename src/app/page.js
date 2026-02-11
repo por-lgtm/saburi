@@ -71,10 +71,13 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="text-center" style={{ marginTop: '3rem' }}>
+          <div className={styles.actionArea}>
             <Link href="/menu" className="btn btn-outline">
               メニュー一覧へ
             </Link>
+            <p className={styles.takeoutMsg}>
+              テイクアウトもできます。
+            </p>
           </div>
         </div>
       </section>
