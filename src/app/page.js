@@ -24,13 +24,7 @@ export default function Home() {
       desc: "前菜からデザートまで、佐分利の味を堪能できるフルコース。特別な日の彩りに。",
       image: "/images/dinner-course.jpg"
     },
-    {
-      id: 4,
-      name: "Takeout限定オードブル",
-      price: "¥6,000 ~",
-      desc: "ご家庭でも本格中華を。4〜5人前より承ります。",
-      image: "/images/takeout.jpg"
-    }
+
   ];
 
   return (
