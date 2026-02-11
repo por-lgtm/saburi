@@ -72,11 +72,8 @@ export default function AccessPage() {
             <div className={styles.parkingSection} style={{ marginTop: '4rem' }}>
                 <h3 className={styles.parkingTitle} style={{ textAlign: 'center', marginBottom: '2rem', fontFamily: 'var(--font-serif)' }}>駐車場のご案内</h3>
                 <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-                    <p style={{ marginBottom: '1rem' }}>
-                        お店の前の「青枠」部分が駐車場です（4台分）。
-                    </p>
                     <img
-                        src="/images/parking_map.svg"
+                        src="/images/parking_map.png"
                         alt="和風中華佐分利 駐車場マップ"
                         style={{ width: '100%', maxWidth: '600px', height: 'auto', border: '1px solid #eee' }}
                     />
