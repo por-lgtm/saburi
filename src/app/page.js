@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -30,8 +31,15 @@ export default function Home() {
   return (
     <div className={styles.main}>
       {/* Hero Section */}
-      {/* Hero Section */}
-      <section className={styles.hero} style={{ backgroundImage: 'url(/images/hero_interior_user.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className={styles.hero}>
+        <Image
+          src="/images/hero_interior_user.png"
+          alt="和風中華 佐分利の店内"
+          fill
+          style={{ objectFit: 'cover' }}
+          priority
+          sizes="100vw"
+        />
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <h2 className={styles.heroTitle}>美山の四季<br />中華で味わう</h2>
@@ -48,7 +56,14 @@ export default function Home() {
           <div className={styles.conceptContent}>
             <div className={styles.conceptImageWrapper}>
               {/* Owner Photo */}
-              <img src="/images/owner.jpg" alt="店主 佐分利" className={styles.ownerImage} />
+              <Image
+                src="/images/owner.jpg"
+                alt="店主 佐分利"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 400px"
+                className={styles.ownerImage}
+              />
             </div>
             <div className={styles.conceptTextWrapper}>
               <p className={styles.conceptText}>
