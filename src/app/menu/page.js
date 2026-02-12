@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 import { useState } from "react";
 import styles from "./page.module.css";
 import { menuItems, CATEGORIES } from "@/data/menuItems";
@@ -16,6 +16,15 @@ export default function MenuPage() {
     return (
         <div className={styles.container}>
             <div className={styles.header}>
+                <Image
+                    src="/images/hero_bg.png"
+                    alt="お品書き"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                    className={styles.heroImage}
+                />
+                <div className={styles.heroOverlay}></div>
                 <h2 className={styles.title}>お品書き</h2>
             </div>
 
