@@ -50,7 +50,7 @@ export default function PhotosPage() {
 
             <div style={{ textAlign: 'center', marginTop: '2rem' }}>
                 <p>Instagramでも最新の写真を公開中です。</p>
-                <a href="https://www.instagram.com/saburi_wafu_chuka/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <a href="https://www.instagram.com/wafu_chuka_saburi/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                     Instagramを見る
                 </a>
             </div>

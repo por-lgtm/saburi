@@ -15,7 +15,7 @@ export default function Footer() {
                     <ul>
                         <li><a href="/access">アクセス</a></li>
                         <li><a href="/contact">お問い合わせ</a></li>
-                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.instagram.com/wafu_chuka_saburi/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     </ul>
                 </div>
             </div>

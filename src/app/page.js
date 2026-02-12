@@ -34,8 +34,7 @@ export default function Home() {
       <section className={styles.hero} style={{ backgroundImage: 'url(/images/hero_interior_user.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
-          <h2 className={styles.heroTitle}>美山の四季を、<br />中華で味わう。</h2>
-          <p className={styles.heroSubtitle}>和風中華 佐分利</p>
+          <h2 className={styles.heroTitle}>美山の四季<br />中華で味わう</h2>
           <Link href="/menu" className="btn">
             お品書きを見る
           </Link>
@@ -46,12 +45,21 @@ export default function Home() {
       <section className={`section ${styles.concept}`}>
         <div className="container">
           <h3 className={styles.sectionTitle}>ご挨拶</h3>
-          <p className={styles.conceptText}>
-            京都・美山の豊かな自然に囲まれた「和風中華 佐分利」。<br />
-            地元の新鮮な食材を使用し、和のエッセンスを取り入れた<br />
-            優しい味わいの中華料理をご提供しております。<br /><br />
-            ゆったりとした特別なお時間をお過ごしください。
-          </p>
+          <div className={styles.conceptContent}>
+            <div className={styles.conceptImageWrapper}>
+              {/* Owner Photo */}
+              <img src="/images/owner.jpg" alt="店主 佐分利" className={styles.ownerImage} />
+            </div>
+            <div className={styles.conceptTextWrapper}>
+              <p className={styles.conceptText}>
+                京都・美山の豊かな自然に囲まれた「和風中華 佐分利」。<br />
+                地元の新鮮な食材を使用し、和のエッセンスを取り入れた<br />
+                優しい味わいの中華料理をご提供しております。<br /><br />
+                ゆったりとした特別なお時間をお過ごしください。<br /><br />
+                店主 佐分利
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -73,7 +81,7 @@ export default function Home() {
           </div>
           <div className={styles.actionArea}>
             <Link href="/menu" className="btn btn-outline">
-              メニュー一覧へ
+              一覧へ
             </Link>
             <p className={styles.takeoutMsg}>
               テイクアウトもできます。

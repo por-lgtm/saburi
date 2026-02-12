@@ -27,7 +27,12 @@ export default function MenuPage() {
             <div className={`container ${styles.menuContent}`}>
                 {filteredCategories.map((cat) => {
                     const items = menuItems.filter((item) => item.category === cat.name);
-                    return <MenuSection key={cat.id} title={cat.name} items={items} />;
+                    return <MenuSection
+                        key={cat.id}
+                        title={cat.name}
+                        items={items}
+                        isSingleColumn={activeCategory === "すべて"}
+                    />;
                 })}
             </div>
         </div>

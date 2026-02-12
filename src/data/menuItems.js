@@ -5,7 +5,7 @@ export const menuItems = [
     name: "和風中華ランチコース（メイン：海鮮・点心）",
     category: "コース",
     description: "",
-    price: null,
+    price: "3,500円",
     image: null
   },
   {
@@ -13,7 +13,7 @@ export const menuItems = [
     name: "和風中華ランチコース（メイン：肉）",
     category: "コース",
     description: "",
-    price: null,
+    price: "3,500円",
     image: null
   },
 
@@ -23,7 +23,7 @@ export const menuItems = [
     name: "和風中華御前（ご飯付き）",
     category: "ランチ",
     description: "",
-    price: null,
+    price: "1,200円",
     image: null
   },
   {
@@ -41,7 +41,7 @@ export const menuItems = [
     name: "前菜五種盛り",
     category: "前菜",
     description: "",
-    price: null,
+    price: "1,500円",
     image: null
   },
   {

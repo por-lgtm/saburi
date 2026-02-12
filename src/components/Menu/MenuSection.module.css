@@ -32,6 +32,22 @@
         /* Wide gap for elegance */
         row-gap: 3rem;
     }
+
+    .grid.singleColumn {
+        grid-template-columns: 1fr;
+        /* Single column for "All" view */
+        max-width: 500px;
+        /* Sharply narrower for scanning */
+        margin: 0 auto;
+        /* Center the list */
+        row-gap: 1.5rem;
+        /* Tighter spacing for scanability */
+    }
+
+    .grid.singleColumn .card {
+        padding-bottom: 1rem;
+        /* Reduced padding for tighter list */
+    }
 }
 
 .card {
@@ -57,16 +73,28 @@
 
 .info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* Horizontal layout */
+    justify-content: space-between;
+    /* Name left, Price right */
+    align-items: baseline;
+    /* Align text baselines */
+    flex-wrap: wrap;
+    /* Allow wrapping if very long */
 }
 
 .itemName {
     font-family: var(--font-serif);
     font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
+    /* Remove bottom margin for row layout */
     color: var(--c-black);
     letter-spacing: 0.05em;
+    flex: 1;
+    /* Allow name to take available space */
+    padding-right: 1rem;
+    /* Space before price */
 }
 
 .itemDesc {
@@ -80,11 +108,15 @@
 
 .itemPrice {
     font-family: var(--font-serif);
+    font-family: var(--font-serif);
     /* Price numbers in serif look elegant */
     font-weight: normal;
     color: var(--c-black);
     font-size: 1.1rem;
-    margin-top: 0.5rem;
+    margin-top: 0;
+    /* Remove top margin */
     text-align: right;
-    /* Align price to right */
+    white-space: nowrap;
+    /* Prevent price breaking */
+    flex-shrink: 0;
 }

@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.css';
@@ -17,8 +18,9 @@ export default function Header() {
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
                 <div className={styles.logo}>
-                    <Link href="/" onClick={closeMenu}>
-                        <h1>和風中華 佐分利</h1>
+                    <Link href="/" onClick={closeMenu} className={styles.logoLink}>
+                        <span className={styles.logoSub}>和風中華</span>
+                        <span className={styles.logoMain}>佐分利</span>
                     </Link>
                 </div>
 
@@ -32,9 +34,7 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <div className={styles.cta}>
-                    <a href="tel:07017993780" className="btn">予約・お問い合わせ</a>
-                </div>
+
 
                 {/* Mobile Menu Toggle (Hamburger) */}
                 <button
@@ -51,14 +51,23 @@ export default function Header() {
                 <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.mobileMenuOpen : ''}`}>
                     <nav>
                         <ul className={styles.mobileNavList}>
-                            <li><Link href="/" onClick={closeMenu}>ホーム</Link></li>
-                            <li><Link href="/menu" onClick={closeMenu}>メニュー</Link></li>
-                            <li><Link href="/seats" onClick={closeMenu}>店内・お席</Link></li>
-                            <li><Link href="/access" onClick={closeMenu}>アクセス</Link></li>
+                            {[
+                                { href: "/", label: "ホーム", en: "HOME" },
+                                { href: "/menu", label: "メニュー", en: "MENU" },
+                                { href: "/seats", label: "店内・お席", en: "SEATS" },
+                                { href: "/access", label: "アクセス", en: "ACCESS" },
+                            ].map((link, index) => (
+                                <li key={index}>
+                                    <Link href={link.href} onClick={closeMenu}>
+                                        <span className={styles.jaLabel}>{link.label}</span>
+                                        <span className={styles.enLabel}>{link.en}</span>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
                     <div className={styles.mobileCta}>
-                        <a href="tel:07017993780" className="btn">070-1799-3780</a>
+                        <a href="tel:07017993780" className="btn">予約・お問い合わせ</a>
                     </div>
                 </div>
             </div>

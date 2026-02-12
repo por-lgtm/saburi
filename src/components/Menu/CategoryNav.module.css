@@ -1,25 +1,44 @@
-.navWrapper {
+.navContainer {
+  /* Default static position */
   width: 100%;
-  background-color: rgba(252, 250, 242, 0.95);
-  /* Semi-transparent base color */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  z-index: 100;
-  padding: 1.5rem 0;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(5px);
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 990;
 }
 
 .sticky {
-  position: sticky;
-  top: 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  padding: 1rem 0;
+  position: fixed;
+  top: 80px;
+  /* Match Header Height */
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid var(--c-gray-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  animation: slideDown 0.3s ease forwards;
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 
 .nav {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 0 var(--sp-sm);
+  padding: 1rem var(--sp-sm);
+  /* Padding inside nav */
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;

@@ -43,6 +43,8 @@ body {
   font-family: var(--font-sans), sans-serif;
   /* Default to Sans for readability */
   line-height: 1.6;
+  padding-top: var(--header-height);
+  /* Prevent content overlap with fixed header */
 }
 
 h1,

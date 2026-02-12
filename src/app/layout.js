@@ -1,4 +1,4 @@
-import { Noto_Serif_JP, Noto_Sans_JP } from "next/font/google";
+import { Noto_Serif_JP, Noto_Sans_JP, Shippori_Mincho } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
@@ -13,6 +13,12 @@ const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-noto-sans",
   weight: ["400", "500", "700"],
+});
+
+const shipporiMincho = Shippori_Mincho({
+  subsets: ["latin"],
+  variable: "--font-shippori",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -57,7 +63,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="ja">
-      <body className={`${notoSerif.variable} ${notoSans.variable}`}>
+      <body className={`${notoSerif.variable} ${notoSans.variable} ${shipporiMincho.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

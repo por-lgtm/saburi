@@ -10,9 +10,10 @@
 }
 
 .header {
-    background-color: transparent;
-    /* Remove heavy black background */
-    color: var(--c-black);
+    background-color: var(--c-black);
+    /* Dark background base */
+    color: var(--c-white);
+    /* White text for contrast */
     padding: 8rem 1rem 6rem;
     /* More top padding */
     text-align: center;
@@ -20,16 +21,18 @@
     position: relative;
 
     /* Background Image Settings */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('/images/hero_bg.png');
-    /* Re-using hero bg for now as a fallback with overlay */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('/images/hero_bg.png');
+    /* Much lighter overlay to show food colors clearly */
     background-size: cover;
     background-position: center;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    /* Larger title */
     margin-bottom: 2rem;
-    font-family: var(--font-serif);
+    font-family: var(--font-shippori);
+    /* Use stylish font */
     font-weight: 500;
     letter-spacing: 0.3em;
     /* Increased spacing */
@@ -48,6 +51,8 @@
     padding-right: 1.5rem;
     line-height: 1;
     /* Reset line height to prevent width expansion */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Stronger shadow for readability on light bg */
 }
 
 .subtitle {
