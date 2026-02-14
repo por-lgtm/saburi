@@ -46,9 +46,20 @@
   letter-spacing: 0.1em;
 }
 
-.heroSubtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+@media (max-width: 768px) {
+  .heroContent {
+    padding: 2rem 1.5rem;
+    width: 90%;
+    /* Ensure it fits */
+  }
+
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
 }
 
 /* Sections */
@@ -64,6 +75,12 @@
   background-color: var(--c-white);
   padding: 6rem 0;
   /* text-align: center; Removed to allow flex alignment */
+}
+
+@media (max-width: 768px) {
+  .concept {
+    padding: 4rem 0;
+  }
 }
 
 .conceptContent {
@@ -127,8 +144,17 @@
 /* Recommended Menu */
 .menuGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* 300px -> 280px for better fit */
   gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .menuGrid {
+    gap: 1.5rem;
+    padding: 0 1rem;
+    /* Ensure grid doesn't touch edges if container padding is small */
+  }
 }
 
 .menuItem {
