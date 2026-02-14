@@ -1,0 +1,11 @@
+export const dynamic = 'force-dynamic';
+import MenuClientPage from './MenuClientPage'; // We will move logic to client component or keep here
+import styles from './page.module.css';
+import { menuItems, CATEGORIES } from '@/data/menuItems';
+import CategoryNav from '@/components/Menu/CategoryNav';
+import MenuSection from '@/components/Menu/MenuSection';
+import Link from 'next/link'; // Added import for Link
+import { useState } from 'react'; // This implies client component if used in page directly, checking existing code...
+
+// IMPORTANT: The existing page.js likely uses UseState which makes it a Client Component effectively?
+// Let's check the file content first in the view_file step before writing crazy stuff.
