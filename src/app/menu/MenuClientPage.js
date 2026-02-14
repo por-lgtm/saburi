@@ -34,6 +34,10 @@ export default function MenuClientPage() {
                 onSelectCategory={setActiveCategory}
             />
 
+            <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'right', padding: '2rem 1rem 0' }}>
+                <p style={{ fontSize: '0.9rem', color: '#555' }}>※全て税込価格</p>
+            </div>
+
             <div className={`container ${styles.menuContent}`}>
                 {filteredCategories.map((cat) => {
                     const items = menuItems.filter((item) => item.category === cat.name);
