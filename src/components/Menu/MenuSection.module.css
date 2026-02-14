@@ -23,6 +23,13 @@
     /* Spacing between items */
 }
 
+@media (max-width: 768px) {
+    .grid {
+        gap: 1.5rem;
+        /* Tighter spacing on mobile */
+    }
+}
+
 /* Tablet & Desktop: Switch to a 2-column list for better readability */
 @media (min-width: 768px) {
     .grid {
@@ -98,6 +105,13 @@
     /* Space before price */
 }
 
+@media (max-width: 768px) {
+    .itemName {
+        font-size: 1.1rem;
+        /* Slightly smaller on mobile */
+    }
+}
+
 .itemDesc {
     font-size: 0.95rem;
     color: #555;
@@ -116,8 +130,12 @@
     font-size: 1.1rem;
     margin-top: 0;
     /* Remove top margin */
-    text-align: right;
-    white-space: nowrap;
-    /* Prevent price breaking */
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .itemPrice {
+        font-size: 1rem;
+        /* Match smaller item name */
+    }
 }
