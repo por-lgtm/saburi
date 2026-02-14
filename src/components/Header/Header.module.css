@@ -56,7 +56,7 @@
 }
 
 .logoSub {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     /* Unified size */
     font-weight: 800;
     /* Extra bold */
@@ -71,7 +71,7 @@
 }
 
 .logoMain {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     /* Unified size */
     font-weight: 800;
     color: var(--c-white);
