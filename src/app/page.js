@@ -67,10 +67,14 @@ export default function Home() {
             </div>
             <div className={styles.conceptTextWrapper}>
               <p className={styles.conceptText}>
-                京都・美山の豊かな自然に囲まれた「和風中華 佐分利」。<br />
-                地元の新鮮な食材を使用し、和のエッセンスを取り入れた<br />
-                優しい味わいの中華料理をご提供しております。<br /><br />
-                ゆったりとした特別なお時間をお過ごしください。<br /><br />
+                京都・美山の豊かな自然に囲まれた「和風中華 佐分利」。
+                地元の新鮮な食材を使用し、和のエッセンスを取り入れた
+                優しい味わいの中華料理をご提供しております。
+              </p>
+              <p className={styles.conceptText} style={{ marginTop: '1.5rem' }}>
+                ゆったりとした特別なお時間をお過ごしください。
+              </p>
+              <p className={styles.conceptText} style={{ marginTop: '1.5rem', textAlign: 'right' }}>
                 店主 佐分利
               </p>
             </div>
