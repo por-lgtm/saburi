@@ -16,7 +16,7 @@ export default function MenuClientPage() {
 
     return (
         <div className={styles.main}>
-            <div className={styles.hero}>
+            <div className={styles.header}>
                 <Image
                     src="/images/hero_bg.png"
                     alt="お品書き"
