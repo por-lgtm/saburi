@@ -10,11 +10,13 @@ export default function MenuSection({ title, items, isSingleColumn }) {
                 {items.map((item) => (
                     <div key={item.id} className={styles.card}>
                         <div className={styles.info}>
-                            <h4 className={styles.itemName}>{item.name}</h4>
+                            <div className={styles.headerRow}>
+                                <h4 className={styles.itemName}>{item.name}</h4>
+                                {item.price && <p className={styles.itemPrice}>{item.price}</p>}
+                            </div>
                             {item.description && (
                                 <p className={styles.itemDesc}>{item.description}</p>
                             )}
-                            {item.price && <p className={styles.itemPrice}>{item.price}</p>}
                         </div>
                     </div>
                 ))}

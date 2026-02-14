@@ -73,14 +73,18 @@
 
 .info {
     display: flex;
-    flex-direction: row;
-    /* Horizontal layout */
+    flex-direction: column;
+    /* Stack content vertically */
+    width: 100%;
+}
+
+.headerRow {
+    display: flex;
     justify-content: space-between;
-    /* Name left, Price right */
     align-items: baseline;
-    /* Align text baselines */
-    flex-wrap: wrap;
-    /* Allow wrapping if very long */
+    width: 100%;
+    margin-bottom: 0.25rem;
+    /* Space between name/price and desc */
 }
 
 .itemName {
@@ -88,11 +92,8 @@
     font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 0;
-    /* Remove bottom margin for row layout */
     color: var(--c-black);
     letter-spacing: 0.05em;
-    flex: 1;
-    /* Allow name to take available space */
     padding-right: 1rem;
     /* Space before price */
 }
