@@ -85,6 +85,8 @@
     width: 100%;
     margin-bottom: 0.25rem;
     /* Space between name/price and desc */
+    border: 1px solid red;
+    /* DEBUG: Check width */
 }
 
 .itemName {

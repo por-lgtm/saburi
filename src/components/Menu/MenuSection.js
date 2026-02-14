@@ -12,7 +12,11 @@ export default function MenuSection({ title, items, isSingleColumn }) {
                         <div className={styles.info}>
                             <div className={styles.headerRow}>
                                 <h4 className={styles.itemName}>{item.name}</h4>
-                                {item.price && <p className={styles.itemPrice}>{item.price}</p>}
+                                {item.price ? (
+                                    <p className={styles.itemPrice} style={{ color: 'red', fontWeight: 'bold' }}>Price: {item.price}</p>
+                                ) : (
+                                    <p style={{ color: 'blue' }}>No Price</p>
+                                )}
                             </div>
                             {item.description && (
                                 <p className={styles.itemDesc}>{item.description}</p>
