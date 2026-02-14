@@ -4,7 +4,7 @@ export const menuItems = [
     "name": "和風中華ランチコース（メイン：海鮮・点心）",
     "category": "コース",
     "description": "",
-    "price": "¥3500",
+    "price": "3,500円",
     "image": null
   },
   {
@@ -12,7 +12,7 @@ export const menuItems = [
     "name": "和風中華ランチコース（メイン：肉）",
     "category": "コース",
     "description": "",
-    "price": "¥3800",
+    "price": "3,800円",
     "image": null
   },
   {
@@ -20,7 +20,7 @@ export const menuItems = [
     "name": "和風中華御前（ご飯付き）",
     "category": "ランチ",
     "description": "",
-    "price": "¥2800",
+    "price": "2,800円",
     "image": null
   },
   {
@@ -28,7 +28,7 @@ export const menuItems = [
     "name": "崔流　麺ランチ",
     "category": "ランチ",
     "description": "",
-    "price": "¥2000",
+    "price": "2,000円",
     "image": null
   },
   {
@@ -36,7 +36,7 @@ export const menuItems = [
     "name": "前菜五種盛り",
     "category": "前菜",
     "description": "",
-    "price": "¥3000",
+    "price": "3,000円",
     "image": null
   },
   {
@@ -44,7 +44,7 @@ export const menuItems = [
     "name": "冷菜三種盛り",
     "category": "前菜",
     "description": "",
-    "price": "¥2000",
+    "price": "2,000円",
     "image": null
   },
   {
@@ -52,7 +52,7 @@ export const menuItems = [
     "name": "蒸し鶏の葱ソース",
     "category": "前菜",
     "description": "",
-    "price": "¥1200",
+    "price": "1,200円",
     "image": null
   },
   {
@@ -60,7 +60,7 @@ export const menuItems = [
     "name": "よだれ棒棒鶏",
     "category": "前菜",
     "description": "",
-    "price": "¥1200",
+    "price": "1,200円",
     "image": null
   },
   {
@@ -68,7 +68,7 @@ export const menuItems = [
     "name": "熟成焼豚",
     "category": "前菜",
     "description": "",
-    "price": "¥1000",
+    "price": "1,000円",
     "image": null
   },
   {
@@ -76,7 +76,7 @@ export const menuItems = [
     "name": "クラゲの冷菜",
     "category": "前菜",
     "description": "",
-    "price": "¥1300",
+    "price": "1,300円",
     "image": null
   },
   {
@@ -84,7 +84,7 @@ export const menuItems = [
     "name": "本日の中華風サラダ",
     "category": "前菜",
     "description": "",
-    "price": "¥1500",
+    "price": "1,500円",
     "image": null
   },
   {
@@ -92,7 +92,7 @@ export const menuItems = [
     "name": "胡瓜と搾菜の和え物",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -100,7 +100,7 @@ export const menuItems = [
     "name": "ピータン",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -108,7 +108,7 @@ export const menuItems = [
     "name": "ピータン豆腐",
     "category": "前菜",
     "description": "",
-    "price": "¥900",
+    "price": "900円",
     "image": null
   },
   {
@@ -116,7 +116,7 @@ export const menuItems = [
     "name": "特製もちもち焼き餃子",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -124,7 +124,7 @@ export const menuItems = [
     "name": "フカヒレ蒸し餃子",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -132,7 +132,7 @@ export const menuItems = [
     "name": "ぷりぷり海老蒸し餃子",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -140,7 +140,7 @@ export const menuItems = [
     "name": "海老ニラ蒸し餃子",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -148,7 +148,7 @@ export const menuItems = [
     "name": "かぼちゃ蒸し餃子",
     "category": "前菜",
     "description": "",
-    "price": "¥800",
+    "price": "800円",
     "image": null
   },
   {
@@ -156,7 +156,7 @@ export const menuItems = [
     "name": "海老のせ焼売",
     "category": "前菜",
     "description": "",
-    "price": "¥500",
+    "price": "500円",
     "image": null
   },
   {
@@ -164,7 +164,7 @@ export const menuItems = [
     "name": "蟹とコーンの水晶包",
     "category": "前菜",
     "description": "",
-    "price": "¥500",
+    "price": "500円",
     "image": null
   },
   {
@@ -172,7 +172,7 @@ export const menuItems = [
     "name": "小籠包",
     "category": "前菜",
     "description": "",
-    "price": "¥900",
+    "price": "900円",
     "image": null
   },
   {
@@ -180,7 +180,7 @@ export const menuItems = [
     "name": "点心五種盛り",
     "category": "前菜",
     "description": "",
-    "price": "¥1400",
+    "price": "1,400円",
     "image": null
   },
   {
@@ -188,7 +188,7 @@ export const menuItems = [
     "name": "湯葉海鮮春巻き",
     "category": "前菜",
     "description": "",
-    "price": "¥1600",
+    "price": "1,600円",
     "image": null
   },
   {
@@ -196,7 +196,7 @@ export const menuItems = [
     "name": "五目春巻き",
     "category": "前菜",
     "description": "",
-    "price": "¥1000",
+    "price": "1,000円",
     "image": null
   },
   {
@@ -204,7 +204,7 @@ export const menuItems = [
     "name": "油淋鶏",
     "category": "メイン",
     "description": "",
-    "price": "¥1600",
+    "price": "1,600円",
     "image": null
   },
   {
@@ -212,7 +212,7 @@ export const menuItems = [
     "name": "淡路鶏の唐揚げ",
     "category": "メイン",
     "description": "",
-    "price": "¥1200",
+    "price": "1,200円",
     "image": null
   },
   {
@@ -220,7 +220,7 @@ export const menuItems = [
     "name": "五目皿うどん",
     "category": "メイン",
     "description": "",
-    "price": "¥1500",
+    "price": "1,500円",
     "image": null
   },
   {
@@ -228,7 +228,7 @@ export const menuItems = [
     "name": "香港風焼きそば",
     "category": "メイン",
     "description": "",
-    "price": "¥1600",
+    "price": "1,600円",
     "image": null
   },
   {
@@ -236,7 +236,7 @@ export const menuItems = [
     "name": "五目XO炒飯",
     "category": "メイン",
     "description": "",
-    "price": "¥1300",
+    "price": "1,300円",
     "image": null
   },
   {
@@ -244,7 +244,7 @@ export const menuItems = [
     "name": "蟹あんかけ炒飯",
     "category": "メイン",
     "description": "",
-    "price": "¥1500",
+    "price": "1,500円",
     "image": null
   },
   {
@@ -252,7 +252,7 @@ export const menuItems = [
     "name": "淡路鶏塩葱ラーメン",
     "category": "メイン",
     "description": "",
-    "price": "¥1600",
+    "price": "1,600円",
     "image": null
   },
   {
@@ -260,7 +260,7 @@ export const menuItems = [
     "name": "麻婆ラーメン",
     "category": "メイン",
     "description": "",
-    "price": "¥1800",
+    "price": "1,800円",
     "image": null
   },
   {
@@ -276,7 +276,7 @@ export const menuItems = [
     "name": "鮑のオイスターソース煮込み",
     "category": "メイン",
     "description": "",
-    "price": "¥3000",
+    "price": "3,000円",
     "image": null
   },
   {
@@ -284,7 +284,7 @@ export const menuItems = [
     "name": "海鮮あんかけおこげ",
     "category": "メイン",
     "description": "",
-    "price": "¥3000",
+    "price": "3,000円",
     "image": null
   },
   {
@@ -292,7 +292,7 @@ export const menuItems = [
     "name": "帆立とブロッコリーのオイスターソース炒め",
     "category": "メイン",
     "description": "",
-    "price": "¥2800",
+    "price": "2,800円",
     "image": null
   },
   {
@@ -300,7 +300,7 @@ export const menuItems = [
     "name": "白身魚の蒸し葱醤油ソース",
     "category": "メイン",
     "description": "",
-    "price": "¥3000",
+    "price": "3,000円",
     "image": null
   },
   {
@@ -308,7 +308,7 @@ export const menuItems = [
     "name": "エビチリ",
     "category": "メイン",
     "description": "",
-    "price": "¥2500",
+    "price": "2,500円",
     "image": null
   },
   {
@@ -316,7 +316,7 @@ export const menuItems = [
     "name": "エビマヨ",
     "category": "メイン",
     "description": "",
-    "price": "¥2500",
+    "price": "2,500円",
     "image": null
   },
   {
@@ -324,7 +324,7 @@ export const menuItems = [
     "name": "イカと旬菜の塩炒め",
     "category": "メイン",
     "description": "",
-    "price": "¥2300",
+    "price": "2,300円",
     "image": null
   },
   {
@@ -332,7 +332,7 @@ export const menuItems = [
     "name": "牛ハラミ黒胡椒ソース",
     "category": "メイン",
     "description": "",
-    "price": "¥2800",
+    "price": "2,800円",
     "image": null
   },
   {
@@ -340,7 +340,7 @@ export const menuItems = [
     "name": "牛ハラミとニンニクの芽炒め",
     "category": "メイン",
     "description": "",
-    "price": "¥2500",
+    "price": "2,500円",
     "image": null
   },
   {
@@ -348,7 +348,7 @@ export const menuItems = [
     "name": "青椒肉絲",
     "category": "メイン",
     "description": "",
-    "price": "¥2500",
+    "price": "2,500円",
     "image": null
   },
   {
@@ -356,7 +356,7 @@ export const menuItems = [
     "name": "酢豚",
     "category": "メイン",
     "description": "",
-    "price": "¥2300",
+    "price": "2,300円",
     "image": null
   },
   {
@@ -364,7 +364,7 @@ export const menuItems = [
     "name": "四川回鍋肉",
     "category": "メイン",
     "description": "",
-    "price": "¥1900",
+    "price": "1,900円",
     "image": null
   },
   {
@@ -372,7 +372,7 @@ export const menuItems = [
     "name": "淡路鶏とカシューナッツ炒め",
     "category": "メイン",
     "description": "",
-    "price": "¥1800",
+    "price": "1,800円",
     "image": null
   },
   {
@@ -380,7 +380,7 @@ export const menuItems = [
     "name": "蟹玉あんかけ",
     "category": "メイン",
     "description": "",
-    "price": "¥1700",
+    "price": "1,700円",
     "image": null
   },
   {
@@ -388,7 +388,7 @@ export const menuItems = [
     "name": "四川麻婆豆腐",
     "category": "メイン",
     "description": "",
-    "price": "¥1700",
+    "price": "1,700円",
     "image": null
   },
   {
@@ -396,7 +396,7 @@ export const menuItems = [
     "name": "麻婆茄子",
     "category": "メイン",
     "description": "",
-    "price": "¥1700",
+    "price": "1,700円",
     "image": null
   },
   {
@@ -404,7 +404,7 @@ export const menuItems = [
     "name": "青菜炒め",
     "category": "メイン",
     "description": "",
-    "price": "¥1500",
+    "price": "1,500円",
     "image": null
   },
   {
@@ -412,7 +412,7 @@ export const menuItems = [
     "name": "なめらか杏仁豆腐",
     "category": "デザート",
     "description": "",
-    "price": "¥600",
+    "price": "600円",
     "image": null
   },
   {
@@ -420,7 +420,7 @@ export const menuItems = [
     "name": "黒胡麻団子",
     "category": "デザート",
     "description": "",
-    "price": "¥600",
+    "price": "600円",
     "image": null
   },
   {
@@ -428,7 +428,7 @@ export const menuItems = [
     "name": "ココナッツ団子",
     "category": "デザート",
     "description": "",
-    "price": "¥600",
+    "price": "600円",
     "image": null
   },
   {
@@ -436,7 +436,7 @@ export const menuItems = [
     "name": "シャーベット",
     "category": "デザート",
     "description": "",
-    "price": "¥600",
+    "price": "600円",
     "image": null
   },
   {
@@ -444,7 +444,7 @@ export const menuItems = [
     "name": "オードブル（4〜5人前）",
     "category": "テイクアウト",
     "description": "",
-    "price": "¥6000",
+    "price": "6,000円",
     "image": null
   },
   {
@@ -452,7 +452,7 @@ export const menuItems = [
     "name": "オードブル（6〜7人前）",
     "category": "テイクアウト",
     "description": "",
-    "price": "¥8000",
+    "price": "8,000円",
     "image": null
   },
   {
@@ -460,7 +460,7 @@ export const menuItems = [
     "name": "佐分利弁当（お吸い物付き）",
     "category": "テイクアウト",
     "description": "",
-    "price": "¥3000",
+    "price": "3,000円",
     "image": null
   },
   {

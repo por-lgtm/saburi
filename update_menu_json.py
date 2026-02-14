@@ -45,7 +45,10 @@ try:
             
             # Formatting price
             price_raw = row.get("price_tax_included", "").strip()
-            price = f"¥{price_raw}" if price_raw and price_raw.isdigit() else price_raw
+            if price_raw and price_raw.isdigit():
+                price = f"{int(price_raw):,}円"
+            else:
+                price = price_raw
 
             description = row.get("description_ja", "").strip()
             
