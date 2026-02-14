@@ -10,6 +10,7 @@ export default function Footer() {
                     <p>電話: <a href="tel:07017993780">070-1799-3780</a></p>
                     <p>営業時間: 11:00〜22:00 (L.O. 21:00)</p>
                     <p>定休日: 火曜</p>
+                    <p style={{ fontSize: '0.8rem', opacity: 0.5, marginTop: '1rem' }}>v2026.02.14-2</p>
                 </div>
                 <div className={styles.links}>
                     <ul>
