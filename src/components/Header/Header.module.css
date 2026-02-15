@@ -106,7 +106,8 @@
     background-color: transparent;
     /* No fill */
     box-shadow: none;
-    margin-left: 0.2rem;
+    margin-left: -0.3rem;
+    /* Negative margin to pull it close */
     margin-bottom: 0.2rem;
     /* Align with text baseline */
     height: clamp(18px, 6vw, 30px);
