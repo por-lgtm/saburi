@@ -21,8 +21,8 @@ const shipporiMincho = Shippori_Mincho({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-import { Yuji_Syuku } from "next/font/google";
-const yujiSyuku = Yuji_Syuku({
+import { Yuji_Mai } from "next/font/google";
+const yujiMai = Yuji_Mai({
   subsets: ["latin"],
   variable: "--font-yuji",
   weight: ["400"],
@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="ja">
-      <body className={`${notoSerif.variable} ${notoSans.variable} ${shipporiMincho.variable} ${yujiSyuku.variable}`}>
+      <body className={`${notoSerif.variable} ${notoSans.variable} ${shipporiMincho.variable} ${yujiMai.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -53,29 +53,34 @@
 }
 
 .logoSub {
-    font-size: 1.1rem;
-    /* Slightly larger for readability */
+    font-size: 1.25rem;
     font-weight: 400;
     font-family: var(--font-yuji);
     /* Brush font */
     color: var(--c-white);
     letter-spacing: 0.1em;
     margin: 0;
-    margin-right: 0.2rem;
-    opacity: 0.9;
+    margin-right: 0.5rem;
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add depth for dynamic feel */
 }
 
 .logoMain {
-    font-size: 2.4rem;
-    /* Specific requested large size style */
+    font-size: 3.2rem;
+    /* Much larger for impact */
     font-weight: 400;
     color: var(--c-white);
     font-family: var(--font-yuji);
     /* Brush font */
-    letter-spacing: 0.05em;
-    line-height: 1;
+    letter-spacing: 0.02em;
+    line-height: 0.9;
     margin: 0;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    /* Dynamic shadow */
+    transform: rotate(-1deg);
+    /* Slight organic tilt */
 }
 
 .logoSeal {
@@ -83,25 +88,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--c-white);
-    border-radius: 4px;
-    /* Soft rounded rect/oval look */
-    padding: 0.2rem 0.1rem;
-    background-color: var(--c-red);
-    /* Red background seal */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--c-white);
+    border-radius: 45% 55% 40% 60% / 55% 45% 60% 40%;
+    /* Organic oval "hand-carved" shape */
+    padding: 0.2rem 0.3rem;
+    background-color: transparent;
+    /* No fill */
+    box-shadow: none;
     margin-left: 0.2rem;
-    height: 32px;
+    height: 52px;
+    /* Taller */
+    width: 28px;
+    transform: rotate(3deg);
+    /* Slight imperfection */
 }
 
 .logoSeal span {
     font-family: var(--font-yuji);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: var(--c-white);
     line-height: 1;
     writing-mode: vertical-rl;
-    /* Vertical text */
     text-orientation: upright;
+    font-weight: bold;
 }
 
 /* Desktop Nav - Hidden as per request */
