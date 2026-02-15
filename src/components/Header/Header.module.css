@@ -76,7 +76,8 @@
     letter-spacing: 0.02em;
     line-height: 0.9;
     margin: 0;
-    margin-right: 0.8rem;
+    margin-right: 0rem;
+    /* Bring seal closer */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     /* Dynamic shadow */
     transform: rotate(-1deg);
@@ -95,7 +96,8 @@
     background-color: transparent;
     /* No fill */
     box-shadow: none;
-    margin-left: 0.2rem;
+    margin-left: 0.1rem;
+    /* Slight nudge */
     height: 52px;
     /* Taller */
     width: 28px;
