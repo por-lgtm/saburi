@@ -21,6 +21,13 @@ const shipporiMincho = Shippori_Mincho({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+import { Yuji_Syuku } from "next/font/google";
+const yujiSyuku = Yuji_Syuku({
+  subsets: ["latin"],
+  variable: "--font-yuji",
+  weight: ["400"],
+});
+
 export const metadata = {
   title: "和風中華 佐分利 (さぶり)",
   description: "京都府南丹市美山町にある和風中華佐分利の公式ホームページです。",
@@ -63,7 +70,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="ja">
-      <body className={`${notoSerif.variable} ${notoSans.variable} ${shipporiMincho.variable}`}>
+      <body className={`${notoSerif.variable} ${notoSans.variable} ${shipporiMincho.variable} ${yujiSyuku.variable}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

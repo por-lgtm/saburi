@@ -43,47 +43,65 @@
 }
 
 .logoLink {
-    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    /* Stack vertically on small screens or by default */
-    align-items: center;
-    /* Center align for single line look */
-    line-height: 1;
     flex-direction: row;
-    /* Always row */
+    /* Horizontal again */
+    align-items: center;
+    text-decoration: none;
+    line-height: 1;
     gap: 0.5rem;
 }
 
 .logoSub {
-    font-size: 1.5rem;
-    /* Unified size */
-    font-weight: 800;
-    /* Extra bold */
-    font-family: var(--font-shippori);
-    /* Stylish Mincho */
+    font-size: 1.1rem;
+    /* Slightly larger for readability */
+    font-weight: 400;
+    font-family: var(--font-yuji);
+    /* Brush font */
     color: var(--c-white);
     letter-spacing: 0.1em;
-    opacity: 1;
-    letter-spacing: 0.1em;
-    opacity: 1;
-    /* text-shadow removed */
     margin: 0;
-    /* Reset margins */
+    margin-right: 0.2rem;
+    opacity: 0.9;
 }
 
 .logoMain {
-    font-size: 1.5rem;
-    /* Unified size */
-    font-weight: 800;
+    font-size: 2.4rem;
+    /* Specific requested large size style */
+    font-weight: 400;
     color: var(--c-white);
-    font-family: var(--font-shippori);
-    /* Stylish Mincho */
-    letter-spacing: 0.1em;
-    letter-spacing: 0.1em;
-    /* text-shadow removed */
+    font-family: var(--font-yuji);
+    /* Brush font */
+    letter-spacing: 0.05em;
     line-height: 1;
     margin: 0;
+    margin-right: 0.5rem;
+}
+
+.logoSeal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--c-white);
+    border-radius: 4px;
+    /* Soft rounded rect/oval look */
+    padding: 0.2rem 0.1rem;
+    background-color: var(--c-red);
+    /* Red background seal */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-left: 0.2rem;
+    height: 32px;
+}
+
+.logoSeal span {
+    font-family: var(--font-yuji);
+    font-size: 0.6rem;
+    color: var(--c-white);
+    line-height: 1;
+    writing-mode: vertical-rl;
+    /* Vertical text */
+    text-orientation: upright;
 }
 
 /* Desktop Nav - Hidden as per request */
@@ -322,8 +340,6 @@
     }
 
     .logoLink {
-        flex-direction: row;
-        align-items: center;
         gap: 0.8rem;
     }
 

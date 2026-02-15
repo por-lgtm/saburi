@@ -21,6 +21,11 @@ export default function Header() {
                     <Link href="/" onClick={closeMenu} className={styles.logoLink}>
                         <span className={styles.logoSub}>和風中華</span>
                         <span className={styles.logoMain}>佐分利</span>
+                        <div className={styles.logoSeal}>
+                            <span>さ</span>
+                            <span>ぶ</span>
+                            <span>り</span>
+                        </div>
                     </Link>
                 </div>
 
