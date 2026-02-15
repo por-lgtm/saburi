@@ -46,10 +46,13 @@
     display: flex;
     flex-direction: row;
     /* Horizontal again */
-    align-items: center;
+    align-items: flex-end;
+    /* Align bottom */
     text-decoration: none;
     line-height: 1;
     gap: 0.5rem;
+    padding-bottom: 0.3rem;
+    /* Slight padding for bottom alignment */
 }
 
 .logoSub {
@@ -60,7 +63,9 @@
     color: var(--c-white);
     letter-spacing: 0.1em;
     margin: 0;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.5rem;
+    /* Lift up slightly from bottom */
     opacity: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Add depth for dynamic feel */
@@ -89,25 +94,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--c-white);
+    border: 1px solid var(--c-white);
+    /* Thinner border */
     border-radius: 45% 55% 40% 60% / 55% 45% 60% 40%;
     /* Organic oval "hand-carved" shape */
-    padding: 0.2rem 0.3rem;
+    padding: 0.1rem 0.1rem;
     background-color: transparent;
     /* No fill */
     box-shadow: none;
-    margin-left: 0.1rem;
-    /* Slight nudge */
-    height: 52px;
-    /* Taller */
-    width: 28px;
+    margin-left: 0.2rem;
+    margin-bottom: 0.2rem;
+    /* Align with text baseline */
+    height: 30px;
+    /* Approx half size */
+    width: 18px;
     transform: rotate(3deg);
     /* Slight imperfection */
 }
 
 .logoSeal span {
     font-family: var(--font-yuji);
-    font-size: 0.8rem;
+    font-size: 0.5rem;
+    /* Smaller font */
     color: var(--c-white);
     line-height: 1;
     writing-mode: vertical-rl;
